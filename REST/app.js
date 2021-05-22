@@ -3,6 +3,7 @@
 //con rest
 //Las sintaxis de los parámetros rest nos permiten representar un número indefinido de argumentos como un array.
 //siempre los parametros rest van al final de todo.
+//permiten la destructuración de array y objetos ver:"...otros" del código.
 
 const suma = ( frase, ...otros) => {
     let resultado=0
