@@ -27,16 +27,16 @@ datos = [{
 
   
   //usando fetch
-  const fetchData = async (url) => {
+  const fetchData = async (url, msg) => {
     const r = await fetch(url)
     const d = r.json()
     return {
       datosInternet: async () => d, //lo mismo a decir: {return d}
-      mensaje: 'despues de los datos, digo esto...'
+      mensaje: msg
     }
   }
   
-  fetchData('https://jsonplaceholder.typicode.com/todos/1')
+  fetchData('https://jsonplaceholder.typicode.com/todos/1', 'despues de los datos que vienen de una API, digo esto...')
     .then((r) => {
       r.datosInternet().then(x => {
         console.log(x)

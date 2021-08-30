@@ -8,6 +8,47 @@
 //las clousures son funciones que acceden a una variable que esta en un scope de funcion superior.
 
 
+
+
+const rectangle = (height, width) => {
+  return (method) => {
+    switch (method) {
+      case 'getWidth': return width
+
+      case 'setWidth': return (newWidth) => rectangle(height, newWidth)
+  
+      case 'setHeight': return  //TODO
+      
+      case 'masCinco': return ()=> width + 5
+     
+      default: return (...args) => `unknown method "${method}"`
+    }
+  }
+}
+
+
+r = rectangle(100,200)
+nr = r("setWidth")(5421)
+
+console.log(r("getWidth"))
+console.log(r("masCinco")())
+console.log(nr("getWidth"))
+
+
+
+
+
+
+
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::: otro ejemplo
+
+
+
+
+
+
+
 function crearContador() {
     let contador = 0
     return function incrementar() {
