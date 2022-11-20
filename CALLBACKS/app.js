@@ -1,3 +1,19 @@
+
+
+console.log("************* ejemplo 1 ***************");
+
+function Sumar(a, b, sume) {
+    sume(a + b);
+}
+
+Sumar(1, 4, r => console.log('El resultado es: ' + r))
+
+
+
+
+console.log("************* ejemplo 2 ***************");
+
+
 class Persona {
     constructor(nombre, email) {
         this.nombre = nombre;
@@ -41,21 +57,6 @@ obtenerPersona(14, (elerror, lapersona) => {
     }
 })
 
-
-
-
-console.log("************* ejemplo 2 ***************");
-
-
-function Sumar(a, b, callback) {
-    callback(a + b);
-}
-
-
-
-Sumar(1, 4, (r) => {
-    console.log('El resultado es: ' + r);
-})
 
 
 

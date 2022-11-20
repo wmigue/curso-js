@@ -7,7 +7,7 @@ const Rescatadora = async () => {
     const data = await response.json()
     data.map(x => miArray.push(x.title))
 
-    for (let a in miArray) { // me tira la posicion dentro del array, o la clave de cada item.
+    for (let a in miArray) { // me tira la posicion o indice de cada elemento.
         console.log(a)
      }
 

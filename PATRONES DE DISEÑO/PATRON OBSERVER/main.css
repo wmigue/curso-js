@@ -1,0 +1,35 @@
+
+#textarea{
+    width:95%;
+    height: 80%;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 1%;
+    word-break: break-all; 
+   
+}
+
+.contenedor{
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 2%;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px;
+  
+}
+
+.contenedor > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 1%;
+    padding: 2%;
+  }
+
+.ta {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
